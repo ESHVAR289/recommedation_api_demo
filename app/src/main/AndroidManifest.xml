@@ -16,15 +16,20 @@
 
     <application
         android:allowBackup="true"
+        android:banner="@drawable/app_icon_your_company"
         android:icon="@mipmap/ic_launcher"
-        android:banner="@drawable/default_background"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Leanback">
-        <activity android:name=".RecommendationActivity">
+        <activity
+            android:name=".RecommendationActivity"
+            android:banner="@drawable/app_icon_your_company"
+            android:icon="@drawable/app_icon_your_company"
+            android:label="@string/app_name"
+            android:logo="@drawable/app_icon_your_company"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
